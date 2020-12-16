@@ -1,0 +1,9 @@
+.App{
+  border: 4px #111 solid;
+  background: url("../Assets/PB-BG.jpg");
+  background-size: cover;  
+  display: inline-block;
+}
+
+
+

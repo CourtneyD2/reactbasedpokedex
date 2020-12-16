@@ -1,0 +1,47 @@
+.PI-display{
+  background: lightskyblue;
+  background-position: center;
+  background-size: cover;
+}
+
+.Pokeinfo-data-stats-grid{
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.Pokeinfo-stat-bar{
+  padding: 0px;
+  width: 90%;
+  }
+
+.Pokeinfo-row{
+  display: grid;
+  grid-template-columns: 75px 16px auto;
+  
+}
+
+.Pokecard-data-container{
+  margin: 0px;
+  padding: 0px;
+}
+
+.Pokecard-data-title{  
+  font-size: 0.9rem;
+  font-weight: 550;  
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+
+}
+
+.Pokecard-data-body{
+  text-align: start;
+  margin: 0.2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.Pokecard-data-text{
+  
+  font-size: 0.8rem;
+}
+

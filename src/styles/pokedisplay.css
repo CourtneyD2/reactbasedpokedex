@@ -1,0 +1,11 @@
+.PC-display{
+  background: url('../Assets/PD-BG.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.Pokecard-img{
+  width: 128px;
+  height: auto;  
+  margin-top: 8px;
+}
