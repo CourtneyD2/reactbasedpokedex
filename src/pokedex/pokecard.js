@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import PokeDisplay from './pokedisplay.js'
 import PokeInfo from './pokeinfo'
 import '../styles/pokecard.css';

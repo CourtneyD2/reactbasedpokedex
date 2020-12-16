@@ -4,9 +4,6 @@ import Pokestats from './pokestats.js'
 import Pokebasics from './pokebasics.js'
   
 class PokeInfo extends Component {
-  constructor(props){
-    super(props);
-  }
 
   displayBasicInfo(){
     let info= this.props.info;
@@ -41,7 +38,6 @@ class PokeInfo extends Component {
   }
 
   render(){
-    let imgSrc=`${this.Poke_API}${this.props.id}.png`;
     return (
       <div className="Pokecard PI-display">       
         <div>

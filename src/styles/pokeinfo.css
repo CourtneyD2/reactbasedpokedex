@@ -16,7 +16,7 @@
 
 .Pokeinfo-row{
   display: grid;
-  grid-template-columns: 75px 16px auto;
+  grid-template-columns: 75px 16px 120px;
   
 }
 
@@ -44,4 +44,5 @@
   
   font-size: 0.8rem;
 }
+
 

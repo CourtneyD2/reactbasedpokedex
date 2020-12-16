@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+.container {
+  margin-top: 1px; }
+  .container h1 {
+    text-align: center; }
+  .container .progressbar-container {
+    position: relative;
+    width: 100%;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; }
+    .container .progressbar-container .progressbar-complete {
+      position: absolute;
+      left: 0;
+      top: 0px;
+      height: 100%;
+      background-color: lightseagreen;
+      border-top-right-radius: 100%;
+      border-bottom-right-radius: 100%;
+      z-index: 2; }
+    .container .progressbar-container .progress {
+      z-index: 2; }

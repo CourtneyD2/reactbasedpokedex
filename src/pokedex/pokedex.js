@@ -14,7 +14,7 @@ class Pokedex extends Component{
     this.state ={
       current: 0,
       screen: 1,
-      value: 0.6
+      value: 0
     };
     this.changePokemon = this.changePokemon.bind(this);
     this.changeScreen = this.changeScreen.bind(this);
@@ -36,7 +36,7 @@ class Pokedex extends Component{
           let newVal = 0;
           if (GoHigher || GoLower){newVal = st.current + x} 
           else if (x<0 && this.state.current === 0){newVal =len}
-          return ({current: newVal})
+          return ({current: newVal, value: newVal})
         }
       );
   }
@@ -68,7 +68,6 @@ class Pokedex extends Component{
 
   render(){
     let prefix = this.props.pokemon;
-    let inProp =false;
     return(
     <div className="Pokedex">
       <div className="Pokedex-cards top">
@@ -83,22 +82,20 @@ class Pokedex extends Component{
         </div> 
         <div className="slider">
         <CircularSlider 
-    width={120}
-    label=""
-    min={0}
-    max={this.props.pokemon.length-1}
-    dataIndex={0}
-    labelColor="#005a58"
-    hideLabelValue={true} 
-    knobColor="#005a58" 
-    knobSize={32}
-    progressColorFrom="#00bfbd"
-    progressColorTo="#005a58"
-    progressSize={12}
-    trackColor="#555"
-    trackSize={24}
-    onChange={ value => { this.setState({current: value}) }}
-/></div>
+          width={120}
+          label=""
+          min={0}
+          max={this.props.pokemon.length-1}
+          dataIndex={this.state.value}
+          hideLabelValue={true} 
+          knobColor="#005a58" 
+          knobSize={32}
+          progressSize={12}
+          trackColor="#555"
+          trackSize={24}
+          onChange={ value => { this.setState({current: value}) }}
+        />
+      </div>
 
       </div>
     </div>
