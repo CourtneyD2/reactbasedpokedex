@@ -1,4 +1,1 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 29b573ba6d7d076226e98de4a68da5a5879c4630
+https://github.com/CourtneyD2/reactbasedpokedex
